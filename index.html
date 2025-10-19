@@ -1249,10 +1249,12 @@
     </section>
 
     <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 data-aos="fade-up">Get In Touch</h2>
             <div class="contact-container">
+                <!-- Contact Info -->
                 <div class="contact-info" data-aos="fade-right">
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -1269,7 +1271,7 @@
                         </div>
                         <div>
                             <h3>Email</h3>
-                            <p>adarshhoja70@gmail.com</p>
+                            <p>adarshboja70@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1289,25 +1291,26 @@
                             <h3>Social Links</h3>
                             <p>
                                 <a href="https://github.com/Adarshhoja" target="_blank">GitHub</a> |
-                                <a href="https://www.linkedin.com/in/adarsh-bhoja-051013338/"
-                                    target="_blank">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/adarsh-bhoja-051013338/" target="_blank">LinkedIn</a>
                             </p>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Contact Form -->
                 <div class="contact-form" data-aos="fade-left">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" class="form-control" name="user_name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="user_email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" required>
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
@@ -1315,6 +1318,35 @@
             </div>
         </div>
     </section>
+    
+   - ✅ EmailJS Script (Latest version) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init({
+            publicKey: "xahrbUrBC7pSXd7NN" // ✅ your EmailJS public key
+        });
+    })();
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent normal submit
+
+        emailjs.send("service_02f1u5n", "template_5ht2zhk", {
+            name: this.user_name.value,
+            email: this.user_email.value,
+            subject: this.subject.value,
+            message: this.message.value
+        })
+            .then(function (response) {
+                alert("✅ Message sent successfully!");
+                document.getElementById('contactForm').reset(); // clear form
+            }, function (error) {
+                alert("❌ Failed to send message. Please try again.");
+                console.error(error);
+            });
+    });
+</script>
+
 
     <!-- Footer -->
     <footer>
