@@ -398,8 +398,8 @@
         }
 
         .profile-img-container {
-            width: 350px;
-            height: 350px;
+            width: min(430px, 85vw);
+            height: min(430px, 85vw);
             margin: 0 auto;
             border-radius: 50%;
             padding: 10px;
@@ -539,23 +539,24 @@
         }
 
         .project-img {
-            height: 200px;
+            height: 260px;
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: white;
         }
 
         .project-img img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: fill;
             transition: var(--transition);
         }
 
         .project-card:hover .project-img img {
-            transform: scale(1.1);
+            transform: none;
         }
 
         .project-content {
@@ -972,12 +973,13 @@
         <div class="container">
             <div class="hero-content" data-aos="fade-right">
                 <h1>Adarsh Bhoja</h1>
-                <p class="typewriter">Computer Science Graduate & AI Enthusiast</p>
+                <p class="typewriter">Full-Stack &amp; AI Developer | Data Analytics Enthusiast</p>
                 <p>Passionate about leveraging technology to solve real-world problems through innovative solutions.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn">View Projects</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    <a href="./assets/pdfs/Bhoja_Adarsh_resume.pdf" class="btn resume-btn" download>
+                    <a href="./assets/pdfs/Adarsh_Bhoja_Resume.pdf" class="btn resume-btn"
+                        download="Bhoja-Adarsh-Resume.pdf" type="application/pdf">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
@@ -998,13 +1000,14 @@
             <h2 data-aos="fade-up">About Me</h2>
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
-                    <p>Motivated Computer Science graduate seeking a dynamic role in the tech industry to leverage
-                        problem-solving skills and innovative thinking for real-world challenges. Eager to apply
-                        academic knowledge and hands-on project experience to contribute effectively to a
-                        forward-thinking team pushing the boundaries of technology.</p>
-                    <p>I'm passionate about AI, Machine Learning, and building innovative solutions that make a
-                        difference. My projects reflect my dedication to creating practical applications using
-                        cutting-edge technologies.</p>
+                    <p>I'm Adarsh Bhoja, a Full-Stack Developer, AI Enthusiast, and Data Analytics Professional passionate about building
+                    intelligent, scalable, and data-driven solutions. With expertise in Java, Python, JavaScript, React.js, Node.js,
+                    Express.js, SQL, MongoDB, Power BI, REST APIs, and AWS, I develop modern web applications, AI-powered systems, and
+                    interactive analytics dashboards that solve real-world business challenges.</p>
+                    <p>My interests span Artificial Intelligence, Machine Learning, Large Language Models (LLMs), Data Analytics, Cloud
+                    Computing, and Full-Stack Development. I thrive on learning emerging technologies, solving complex problems, and
+                    creating innovative software that delivers meaningful impact. I'm currently seeking opportunities where I can
+                    contribute, grow, and help build next-generation technology solutions.</p>
                     <a href="#contact" class="btn">Get In Touch</a>
                 </div>
                 <div class="about-image" data-aos="fade-left">
@@ -1025,12 +1028,11 @@
                     <div class="education-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>BE in Computer Science and Engineering</h3>
+                    <h3>B.Tech in Computer Science and Engineering</h3>
                     <p>Neil Gogte Institute of Technology</p>
-                    <p>Pursuing</p>
-                    <p><strong>CGPA:</strong> 8.40</p>
-                    <p><strong>Coursework:</strong> OOPs, Software Engineering, DBMS, Computer Networks, DSA, Artificial
-                        Intelligence</p>
+                    <p>2022-2026</p>
+                    <p><strong>CGPA:</strong> 8.51</p>
+                   
                 </div>
                 <div class="education-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="education-icon">
@@ -1038,7 +1040,7 @@
                     </div>
                     <h3>Intermediate (MPC)</h3>
                     <p>Narayana Junior College</p>
-                    <p>2022</p>
+                    <p>2020-2022</p>
                     <p><strong>Percentage:</strong> 88.9</p>
                 </div>
                 <div class="education-card" data-aos="fade-up" data-aos-delay="300">
@@ -1054,7 +1056,7 @@
         </div>
     </section>
 
-    <!-- ========== SKILLS SECTION (UPDATED with requested additions) ========== -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 data-aos="fade-up">Skills</h2>
@@ -1062,59 +1064,89 @@
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                     <h3><i class="fas fa-code"></i> Programming Languages</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
                     </div>
                 </div>
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <h3><i class="fas fa-globe"></i> Web Technologies</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS</span>
                         <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span> <!-- added React -->
-                        <span class="skill-tag">Node.js</span> <!-- added Node.js -->
-                        <span class="skill-tag">Express.js
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
                     </div>
                 </div>
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <h3><i class="fas fa-brain"></i> AI &amp; Machine Learning</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span> <!-- added MongoDB -->
-                        <span class="skill-tag">PostgreSQL</span> <!-- added PostgreSQL -->
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">FAISS</span>
                     </div>
                 </div>
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <h3><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+                    <h3><i class="fas fa-network-wired"></i> Networking</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Word2Vec</span>
-                        <span class="skill-tag">RAG</span> <!-- added RAG -->
-                        <span class="skill-tag">LLM</span> <!-- added LLM -->
-                        <span class="skill-tag">LangChain</span> <!-- added LangChain -->
-                        <span class="skill-tag">FAISS</span> <!-- added FAISS -->
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">DNS</span>
+                        <span class="skill-tag">DHCP</span>
+                        <span class="skill-tag">Routing</span>
+                        <span class="skill-tag">Switching</span>
+                        <span class="skill-tag">Subnetting</span>
+                        <span class="skill-tag">OSI Model</span>
                     </div>
                 </div>
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
-                    <h3><i class="fas fa-tools"></i> Additional Tools</h3>
+                    <h3><i class="fas fa-cloud"></i> Cloud</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Jupyter Notebook</span>
-                        <span class="skill-tag">Visual Studio Code</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">AWS EC2</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">AWS IAM</span>
+                        <span class="skill-tag">AWS VPC</span>
                     </div>
                 </div>
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
-                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <h3><i class="fas fa-chart-bar"></i> Data Analytics</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Team collaboration</span>
-                        <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Communication</span>
-                        <span class="skill-tag">Innovation</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Microsoft Excel</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="700">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="800">
+                    <h3><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Visual Studio Code</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="900">
+                    <h3><i class="fas fa-cubes"></i> Core Concepts</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">Operating Systems</span>
                     </div>
                 </div>
             </div>
@@ -1128,18 +1160,18 @@
             <div class="projects-container">
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="DocuQuery AI Project">
+                        <img src="./assets/img/docuquery-dashboard.png"
+                            alt="DocuQuery AI PDF summarizer dashboard" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>DocuQuery AI – Intelligent PDF Summarization & Q&A System</h3>
-                        <p>Developed an AI-powered system with two core features: PDF Summarizer for generating concise
-                            summaries and Interactive Q&A for answering queries from document content.</p>
+                        <p>Built a RAG-powered web app that summarizes PDFs and answers document-based questions
+                            through an interactive chat interface.</p>
                         <div class="project-links">
                             <a href="https://github.com/Adarshboja/InstaSummarizer" class="project-link">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
-                            <a href="https://instasummarizer.onrende.com/" class="project-link">
+                            <a href="https://docureyai-rag-system.onrender.com/" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
@@ -1157,28 +1189,18 @@
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-                            alt="Spam Detection Project">
+                        <img src="./assets/img/customer-behavior-dashboard.png"
+                            alt="Customer Behavior Analytics Power BI dashboard" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>SPAM DETECTION USING MACHINE LEARNING</h3>
-                        <p>Developed an ML-based application to detect and classify spam messages from SMS/text data
-                            using supervised learning.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
+                        <h3>Customer Behavior Analytics Dashboard</h3>
+                        <p>Interactive Power BI dashboard analyzing 25K+ sales records and 12+ KPIs with DAX, SQL,
+                            slicers, and drill-through insights.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">CountVectorizer</span>
-                            <span class="tech-tag">MultinomialNB</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Microsoft Excel</span>
+                            <span class="tech-tag">DAX</span>
                         </div>
                     </div>
                 </div>
@@ -1189,16 +1211,13 @@
                     </div>
                     <div class="project-content">
                         <h3>Money Map: The Personal Finance Tracker</h3>
-                        <p>Developed a web-based personal finance tracker to help users manage income, expenses, and
-                            savings efficiently.
-                            Implemented interactive dashboards, data visualization, and budget analysis features to
-                            provide financial insights
-                            and promote better money management.</p>
+                        <p>Full-stack finance tracker for managing income, expenses, and savings with visual dashboards
+                            and budget insights.</p>
                         <div class="project-links">
                             <a href="#" class="project-link">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
-                            <a href="#" class="project-link">
+                            <a href="https://expense-tracker-sable-mu-19.vercel.app/" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
@@ -1209,6 +1228,29 @@
                             <span class="tech-tag">SupaBase</span>
                             <span class="tech-tag">Random Forest</span>
                             <span class="tech-tag">Authentication</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-img">
+                        <img src="./assets/img/retail-sales-dashboard.png"
+                            alt="Retail Sales Analytics Power BI dashboard" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Retail Sales Analytics Dashboard</h3>
+                        <p>Three-page Power BI dashboard analyzing 2.29M+ sales, 286K+ profit, and 38K transactions,
+                            with Python-powered cleaning and DAX KPIs.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Adarshboja/Retail-Sales-Analytics-Dashboard" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+        
+                            </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Power Query</span>
+                            <span class="tech-tag">DAX</span>
                         </div>
                     </div>
                 </div>
@@ -1239,7 +1281,12 @@
                         <i class="fas fa-code"></i>
                     </div>
                     <div class="certification-content">
-                        <h3>Python (Basic) — HackerRank Certification</h3>
+                        <h3>Pyth
+                            
+                            
+                            
+                            
+                            on — HackerRank Certification</h3>
                         <p>Certified by Hacker Rank</p>
                         <a href="./assets/pdfs/pyhton-certificate(basic).pdf" class="certificate-link">
                             <i class="fas fa-external-link-alt"></i> View Certificate
@@ -1291,8 +1338,8 @@
                         <div>
                             <h3>Social Links</h3>
                             <p>
-                                <a href="https://github.com/Adarshhoja" target="_blank">GitHub</a> |
-                                <a href="https://www.linkedin.com/in/adarsh-bhoja-051013338/"
+                                <a href="https://github.com/Adarshboja" target="_blank">GitHub</a> |
+                                <a href="https://www.linkedin.com/in/bhoja-adarsh-051013338/"
                                     target="_blank">LinkedIn</a>
                             </p>
                         </div>
@@ -1301,7 +1348,9 @@
 
                 <!-- Contact Form -->
                 <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formsubmit.co/adarshboja70@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New portfolio contact message">
+                        <input type="hidden" name="_template" value="table">
                         <div class="form-group">
                             <input type="text" class="form-control" name="user_name" placeholder="Your Name" required>
                         </div>
@@ -1323,8 +1372,7 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/plain">
         (function () {
             emailjs.init({
                 publicKey: "xahrbUrBC7pSXd7NN" // ✅ your EmailJS public key
@@ -1356,16 +1404,20 @@
         <div class="container">
             <div class="footer-content">
                 <h3>Adarsh Bhoja</h3>
-                <p>Computer Science Graduate | AI & ML Enthusiast</p>
+                <p>Full-Stack &amp; AI Developer | Data Analytics Enthusiast</p>
                 <div class="social-links">
-                    <a href="https://github.com/Adarshhoja" class="social-link" target="_blank">
+                    <a href="https://github.com/Adarshboja" class="social-link" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/adarsh-bhoja-051013338/" class="social-link" target="_blank">
+                    <a href="https://www.linkedin.com/in/bhoja-adarsh-051013338/" class="social-link" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:adarshhoja70@gmail.com" class="social-link">
+                    <a href="mailto:adarshboja70@gmail.com" class="social-link" aria-label="Email Adarsh">
                         <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/917013650721" class="social-link" target="_blank"
+                        rel="noopener noreferrer" aria-label="Chat with Adarsh on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
                 <p class="copyright">&copy; 2023 Adarsh Bhoja. All Rights Reserved.</p>
@@ -1399,14 +1451,6 @@
             } else {
                 header.classList.remove('scrolled');
             }
-        });
-
-        // Form submission (local fallback)
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            // EmailJS is already handling, but we keep this for consistency? 
-            // To avoid double alert, we rely on EmailJS. 
-            // However the default action is prevented. So no conflict.
-            // (the separate emailjs script already does preventDefault and alert)
         });
 
         // Floating shapes animation
